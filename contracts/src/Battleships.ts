@@ -113,8 +113,8 @@ export class Battleships extends SmartContract {
 
     const fleetRoot = this.player2FleetHash.getAndRequireEquals();
 
-    const computedHitRoot = guessWitness.calculateRoot(Field(1));
-    const computedMissRoot = guessWitness.calculateRoot(Field(0));
+    const computedHitRoot = guessWitness.calculateRoot(Field(2));
+    const computedMissRoot = guessWitness.calculateRoot(Field(1));
 
     const isHit = computedHitRoot.equals(fleetRoot);
 
@@ -172,8 +172,8 @@ export class Battleships extends SmartContract {
 
     const fleetRoot = this.player1FleetHash.getAndRequireEquals();
 
-    const computedHitRoot = guessWitness.calculateRoot(Field(1));
-    const computedMissRoot = guessWitness.calculateRoot(Field(0));
+    const computedHitRoot = guessWitness.calculateRoot(Field(2));
+    const computedMissRoot = guessWitness.calculateRoot(Field(1));
 
     const isHit = computedHitRoot.equals(fleetRoot);
 

@@ -76,9 +76,7 @@ try {
   console.log('build transaction and create proof...');
   const tx = await Mina.transaction(
     { sender: feepayerAddress, fee },
-    async () => {
-      await zkApp.update();
-    }
+    async () => {}
   );
   await tx.prove();
 
